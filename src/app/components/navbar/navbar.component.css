@@ -5,6 +5,10 @@ nav{
     align-items: center;
     /* background-color: black; */
     background-color: #030c4476;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 h4, a{
@@ -28,7 +32,8 @@ a{
 
 .active{
     /* color: rgba(148, 245, 245, 0.927); */
-    color: rgb(217, 106, 34);
+    /* color: rgb(217, 106, 34); */
+    color: #fb551c;
 }
 
 .hamburger-menu{

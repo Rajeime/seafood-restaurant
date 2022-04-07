@@ -1,12 +1,14 @@
 nav{
     display: flex;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 1.4rem;
     align-items: center;
+    /* background-color: black; */
+    background-color: #030c4476;
 }
 
 h4, a{
-    color: white;
+    color: rgb(217, 106, 34);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: .2rem;
     text-transform: uppercase;
@@ -21,6 +23,12 @@ a{
     font-size: 14px;
     text-decoration: none;
     color: white;
+    
+}
+
+.active{
+    /* color: rgba(148, 245, 245, 0.927); */
+    color: rgb(217, 106, 34);
 }
 
 .hamburger-menu{
@@ -32,7 +40,8 @@ a{
 
 
 a:hover{
-    color: rgba(255, 255, 255, 0.818);
+    /* color: rgba(148, 245, 245, 0.927); */
+    color: rgb(217, 106, 34);
 }
 
 @media only screen and (max-width: 1000px) {

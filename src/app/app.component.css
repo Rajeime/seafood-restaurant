@@ -1,6 +1,17 @@
 
-.container{
+/* .container{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+ 
+} */
+
+.container{
+    height: 100vh;
+    background-image: url(/assets/background.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(104, 139, 135, 0.732);
+    /* background-color: rgba(0, 0, 0, 0.325); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }

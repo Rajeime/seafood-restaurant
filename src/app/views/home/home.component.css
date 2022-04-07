@@ -55,4 +55,28 @@ button{
 
     .tagLine h3{
         font-size: 4vw;
-    }}
+    }
+    .container{
+        height: 50vh;
+    }
+
+    .tagLine{
+        left: 50%;
+        top: 25%;
+    }
+}
+
+
+
+
+    @media only screen and (max-width: 400px) {
+        .container{
+            height: 50vh;
+        }
+
+        .tagLine{
+            left: 50%;
+            top: 25%;
+        }
+        
+        }

@@ -37,10 +37,18 @@ a{
 }
 
 .hamburger-menu{
-    background-color: red;
-    height: 30px;
     width: 30px;
     display: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.hamburger-menu .bar{
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    margin: 6px;
 }
 
 
@@ -65,11 +73,48 @@ a:hover{
         font-size: 18px;
     }
     
-    a{
+    .routerLinks{
     display: none;
+    overflow: hidden;
+   
+    }
+
+    .routerLinks .inner{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        position: absolute;
+        background-color: #030c44d0;
+        width: 50%;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .routerLinks a{
+        display: block;
+        font-size: 14px;
     }
 
     .hamburger-menu{
         display: block;
     }
   }
+
+
+  @media only screen and (max-width: 400px) {
+    .routerLinks .inner{
+        width: 100%;
+        height: 50vh;
+    }
+   
+    }
+
+    @media only screen and (max-width: 720px) {
+        .routerLinks .inner{
+            height: 50vh;
+        }
+       
+        }

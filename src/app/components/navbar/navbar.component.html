@@ -3,24 +3,31 @@
         <h4>Sea Food</h4>
     </div>
     <div class="routes">
-        <div class="hamburger-menu">
-         
+        <div class="hamburger-menu" (click)="showMenu(menu)" >
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
         </div>
 
-        <a routerLinkActive="active" 
-        routerLink="/home">Home</a> 
+        <div class="routerLinks" #menu>
+          <div class="inner">
+            <a routerLinkActive="active" 
+            routerLink="/home">Home</a> 
+        
+            <a routerLinkActive="active" 
+            routerLink="/menu">Menu</a> 
+        
+            <a routerLinkActive="active" 
+            routerLink="/services">Services</a> 
     
-        <a routerLinkActive="active" 
-        routerLink="/menu">Menu</a> 
-    
-        <a routerLinkActive="active" 
-        routerLink="/services">Services</a> 
-
-        <a routerLinkActive="active" 
-        routerLink="/about">About</a> 
-    
-        <a routerLinkActive="active" 
-        routerLink="/contactus">Contact Us</a> 
+            <a routerLinkActive="active" 
+            routerLink="/about">About</a> 
+        
+            <a routerLinkActive="active" 
+            routerLink="/contactus">Contact Us</a> 
+          </div>
+        </div>
+       
        
       </div>
 </nav>

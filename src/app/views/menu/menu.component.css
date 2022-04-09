@@ -50,8 +50,8 @@
     color: white;
     padding: 1rem 7.5%;
     background-color: rgb(51, 51, 51);
-    border: 1px solid black ;
-    margin-top: 10px;
+    border: 1px solid white ;
+ 
    
 }
 
@@ -64,10 +64,24 @@ nav a:last-child{
 }
 
 nav a:hover{
-    /* background-color: black; */
+    background-color: #fb551c;
 }
 
 nav{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+}
+
+.menu-navs{
+    /* display: flex;
+    justify-content: center; */
+    /* width: 200px; */
+    /* border: 1px solid black; */
+    width: 71%;
+    margin: 40px auto;
+}
+
+nav .active{
+    background-color: #fb551c;
 }

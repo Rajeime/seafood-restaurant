@@ -9,6 +9,10 @@ import { HomeComponent } from './views/home/home.component';
 import { ServiceComponent } from './views/service/service.component';
 import { AboutComponent } from './views/about/about.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { ConchComponent } from './views/menu/menu-views/conch/conch.component';
+import { FishComponent } from './views/menu/menu-views/fish/fish.component';
+import { LobsterComponent } from './views/menu/menu-views/lobster/lobster.component';
+import { ShrimpComponent } from './views/menu/menu-views/shrimp/shrimp.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ContactComponent } from './views/contact/contact.component';
     HomeComponent,
     ServiceComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ConchComponent,
+    FishComponent,
+    LobsterComponent,
+    ShrimpComponent
   ],
   imports: [
     BrowserModule,

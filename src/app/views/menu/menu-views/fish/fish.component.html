@@ -1,0 +1,10 @@
+
+<div class="outer-layer">
+    <div class="card" *ngFor="let fish of fishes">
+        <img src="{{fish.img}}" alt="Avatar" style="width:100%; height: 100%;">
+        <div class="container">
+          <h4><b>{{fish.name}}</b></h4> 
+          <p>{{fish.price | currency}}</p> 
+        </div>
+      </div>
+</div>

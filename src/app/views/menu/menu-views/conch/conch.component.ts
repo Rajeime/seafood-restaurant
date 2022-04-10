@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-conch',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conch.component.css']
 })
 export class ConchComponent implements OnInit {
+  conches:any
 
-  constructor() { }
+  constructor(menuservice:MenuService) { 
+    this.conches  = menuservice.conch()
+  }
 
   ngOnInit(): void {
   }

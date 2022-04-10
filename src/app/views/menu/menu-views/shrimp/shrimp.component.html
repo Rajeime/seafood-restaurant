@@ -1,1 +1,11 @@
-<p>shrimp works!</p>
+<div class="outer-layer">
+    <div class="card" *ngFor="let shrimp of shrimps">
+        <img src="{{shrimp.img}}" alt="Avatar" style="width:100%; height: 100%;">
+        <div class="container">
+          <h4><b>{{shrimp.name}}</b></h4> 
+          <p>{{shrimp.price | currency}}</p> 
+        </div>
+       
+      </div>
+</div>
+

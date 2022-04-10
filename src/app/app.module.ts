@@ -13,6 +13,7 @@ import { ConchComponent } from './views/menu/menu-views/conch/conch.component';
 import { FishComponent } from './views/menu/menu-views/fish/fish.component';
 import { LobsterComponent } from './views/menu/menu-views/lobster/lobster.component';
 import { ShrimpComponent } from './views/menu/menu-views/shrimp/shrimp.component';
+import { HamburgerMenuDirective } from './directives/hamburger-menu.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ShrimpComponent } from './views/menu/menu-views/shrimp/shrimp.component
     ConchComponent,
     FishComponent,
     LobsterComponent,
-    ShrimpComponent
+    ShrimpComponent,
+    HamburgerMenuDirective
   ],
   imports: [
     BrowserModule,

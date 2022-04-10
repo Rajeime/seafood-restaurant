@@ -3,7 +3,7 @@
         <h4>Sea Food</h4>
     </div>
     <div class="routes">
-        <div class="hamburger-menu" (click)="showMenu(menu)" >
+        <div class="hamburger-menu" (click)="changeNav(menu)" [ngClass]="status ? 'change' : 'danger'">
               <div class="bar"></div>
               <div class="bar"></div>
               <div class="bar"></div>

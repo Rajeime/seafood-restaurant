@@ -51,6 +51,17 @@ a{
     margin: 6px;
 }
 
+.change .one {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+.change .two {opacity: 0;}
+  
+.change .three {
+    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 
 a:hover{
     /* color: rgba(148, 245, 245, 0.927); */

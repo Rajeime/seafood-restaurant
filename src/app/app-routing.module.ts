@@ -11,16 +11,18 @@ import { MenuComponent } from './views/menu/menu.component';
 import { ServiceComponent } from './views/service/service.component';
 
 const routes: Routes = [ 
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {component:AboutComponent, path:"about"},
   {component:ContactComponent, path:"contactus"},
   {component:HomeComponent, path:"home"},
   {component:MenuComponent, path:"menu",
   children: [
+    {path: '', redirectTo: '/menu/conch', pathMatch: 'full'},
     {component:ConchComponent, path:"conch"},
     {component:FishComponent, path:"fish"},
     {component:LobsterComponent, path:"lobster"},
     {component:ShrimpComponent, path:"shrimp"}
-  ]
+  ] 
 },
   {component:ServiceComponent, path:"services"}
 ];

@@ -1,5 +1,5 @@
 .container{
-    /* background-image: url(/assets/backgroundThree.jpg); */
+    background-image: url(/assets/service.jpg);
     background-blend-mode: multiply;
     background-color: rgba(104, 139, 135, 0.732);
     background-position:center;
@@ -58,6 +58,7 @@
     margin: 12%  20px 0px 20px; 
     box-shadow:  0 0 10px  rgba(0, 0, 0, 0.123);
     border-radius: 6px;
+    box-sizing: border-box;
   }
 
 .services div h4{
@@ -79,4 +80,51 @@
   }
 
 
+ /* order in modal design */
+ /* .order-container{
+    width: 400px;
+    border: 1px solid;
+ }
+ .order-container header{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .order-container .links{
+     display: flex;
+ }
+
+
+ .order-container .links li{
+    list-style-type: none;
+}
+
+ .order-container .links a{
+     text-decoration: none;
+ } */
+
+  
+  /* media query */
+  @media only screen and (max-width: 1330px) {
+    .services div:last-child{
+        margin-bottom: 12%;
+    }
+  }
+
   /* order in modal design */
+
+  @media only screen and (max-width: 530px) {
+    .services{
+        /* display: grid; */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        /* gap: 2px;
+        margin: 0 4rem;         */
+      }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .services{
+       
+        margin: 0 .4rem;
+      }
+  }

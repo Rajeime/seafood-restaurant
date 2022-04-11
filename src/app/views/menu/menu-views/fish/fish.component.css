@@ -26,7 +26,6 @@
     transform: scale(1.1);
     transition: 10s;
   }
-
   
   .container {
     padding: 2px 16px;
@@ -37,6 +36,13 @@
       text-align: center;
       font-family: sans-serif;
       font-weight: 400;
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: #fb541cd0;
+      left: 0;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      padding: 10px 20px;
   }
 
   .outer-layer p {
@@ -47,6 +53,7 @@
       color: white;
       clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
       padding: 12px 24px;
+    
   }
 
   button{

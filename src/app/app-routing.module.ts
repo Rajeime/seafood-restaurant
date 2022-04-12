@@ -18,10 +18,10 @@ const routes: Routes = [
   {component:MenuComponent, path:"menu",
   children: [
     {path: '', redirectTo: '/menu/conch', pathMatch: 'full'},
-    {component:ConchComponent, path:"conch"},
-    {component:FishComponent, path:"fish"},
-    {component:LobsterComponent, path:"lobster"},
-    {component:ShrimpComponent, path:"shrimp"}
+    {component:ConchComponent, path:"conch" , data:{animation:'isLeft'}},
+    {component:FishComponent, path:"fish", data:{animation:'isLeft'}},
+    {component:LobsterComponent, path:"lobster", data:{animation:'isLeft'}},
+    {component:ShrimpComponent, path:"shrimp", data:{animation:'isLeft'}}
   ] 
 },
   {component:ServiceComponent, path:"services"}

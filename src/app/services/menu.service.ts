@@ -16,7 +16,7 @@ export class MenuService {
       {name:"Brown Stew Fish" , img:"/assets/menu-items/brown-stew.jpg", price:2000},
       {name:"Steam Fish" , img:"/assets/menu-items/steam-fish.jpg", price:2000},
       {name:"Roast Fish" , img:"/assets/menu-items/grill-fish.jpg", price:2000},
-      {name:"Roast Fish" , img:"/assets/menu-items/grill-fish.jpg", price:2000}
+      {name:"Pan Seared Fish" , img:"/assets/menu-items/Pan-seared-fish.jpg", price:1800}
       // {name:"Steam Fish" , img:"/assets/menu-items/steam-fish.jpg", price:2000}
       // {name:"Brown StewFish"},
     ]
@@ -46,7 +46,7 @@ export class MenuService {
     return [
       {name:"Stew Conch", img:"/assets/menu-items/Stew-Conch.jpg", price:2100},
       {name:"Curry Conch" , img:"/assets/menu-items/currry-conch.jpg", price:2100},
-      {name:"Shrimp In Batter" , img:"/assets/menu-items/fried-shrimp.jpg", price:2000},
+      {name:"Conch Soup" , img:"/assets/menu-items/conch-soup.jpg", price:1800},
       // {name:"Steam Fish" , img:"/assets/menu-items/steam-fish.jpg", price:2000}
       // {name:"Brown StewFish"},
     ]

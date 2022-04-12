@@ -1,0 +1,71 @@
+.container{
+    background-image: url(/assets/aboutUs.jpg);
+    background-color: rgba(104, 139, 135, 0.732);
+    background-position:center;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.heading{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: "Marcellus", serif;
+    transform: translate(-50%,-50%);
+}
+
+.heading h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+}
+
+.heading h1::before{
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 106%;
+  }
+
+.heading h1::after{
+    content: "";
+    height: 1px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 106%;
+  }
+
+
+  .abouts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 2px;
+    margin: 0 4rem;        
+  }
+
+.abouts div{
+    line-height: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    margin: 2%  20px 0px 20px; 
+    /* box-shadow:  0 0 10px  rgba(0, 0, 0, 0.123); */
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  .abouts div h4{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+p{
+    margin: 10px 0;
+}

@@ -1,0 +1,53 @@
+<div class="orderContaier">
+    <header>
+        <div class="logo">
+            <h4>Seafood</h4>
+        </div>
+        <div class="order-nav">
+            <a href=""><fa-icon [icon]="faBook"></fa-icon></a>
+            <a href=""><fa-icon [icon]="faLocation"></fa-icon></a>
+            <a href=""><fa-icon [icon]="faCartShopping"></fa-icon></a>
+            <a href=""><fa-icon [icon]="faClose"></fa-icon></a>
+        </div>
+    </header>
+    <div class="top-background">
+        
+    </div>
+
+    <div class="contents">
+        <div class="conch menu">
+            <h5>Conch</h5>
+            <div class="menu-items" *ngFor="let conch of conches">
+                <h4>{{conch.name}}</h4>
+                <h4>{{conch.price | currency}}</h4>
+            </div>
+        </div>
+    
+        <div class="fish menu">
+            <h5>Fish</h5>
+            <div class="menu-items" *ngFor="let fish of fishes">
+                <h4>{{fish.name}}</h4>
+                <h4>{{fish.price | currency}}</h4>
+            </div>
+        </div>
+    
+        <div class="lobster menu">
+            <h5>Lobster</h5>
+            <div class="menu-items" *ngFor="let lobster of lobsters">
+                <h4>{{lobster.name}}</h4>
+                <h4>{{lobster.price | currency}}</h4>
+            </div>
+        </div>
+    
+        <div class="shrimp menu">
+            <h5>Shrimp</h5>
+            <div class="menu-items" *ngFor="let shrimp of shrimps">
+                <h4>{{shrimp.name}}</h4>
+                <h4>{{shrimp.price | currency}}</h4>
+            </div>
+        </div>
+    
+    </div>
+    
+    </div>
+    

@@ -33,10 +33,17 @@
     }
   
     .card h4{
-        text-align: center;
-        font-family: sans-serif;
-        font-weight: 400;
-    }
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: 400;
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: #fb541cd0;
+      left: 0;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      padding: 10px 20px;
+  }
   
     .outer-layer p {
         position:absolute;

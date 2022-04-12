@@ -1,0 +1,76 @@
+.orderContaier{
+    /* border: 1px solid; */
+    margin: auto;
+    width: 50%;
+    /* height: 200px; */
+    /* background-color: rgb(245, 166, 166); */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    
+}
+
+.top-background{
+    background-image: url(/assets/backgroundThree.jpg);
+    height: 10vh;
+    background-position:center;
+    background-size: cover;
+}
+
+.orderContaier header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* padding: 10px; */
+    /* background-color: #ffffff56; */
+    background-color: hsla(0,0%,100%,.85);
+}
+
+.logo h4{
+    color: #4c4c4c;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.orderContaier header .order-nav{
+    display: flex;
+    text-align: center;
+}
+
+.orderContaier header .order-nav a{
+    text-decoration: none;
+    /* margin: 2rem; */
+    padding: 10px;
+    color: #4c4c4c;
+    font-size:20px;
+    width: 70px;
+    border-left: 1px solid #4c4c4c;
+}
+
+.orderContaier header .order-nav a:hover{
+   background-color: #e7e3e356;
+}
+
+.menu-items{
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #9f9f9fa7;
+    width: 50%;
+}
+
+.menu h5{
+    color: #4c4c4c;
+    font-size:28px;
+    text-transform: uppercase;
+}
+
+.menu-items:hover{
+    background-color: #e0e0e058;
+    cursor: pointer;
+}
+
+.contents{
+    padding: 10px;
+}

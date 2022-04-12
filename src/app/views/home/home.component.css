@@ -1,6 +1,6 @@
 .container{
     height: 100vh;
-    background-image: url(assets/background.jpg);
+    background-image: url('assets/background.jpg');
     background-blend-mode: multiply;
     background-color: rgba(104, 139, 135, 0.732);
     /* background-color: rgba(0, 0, 0, 0.325); */

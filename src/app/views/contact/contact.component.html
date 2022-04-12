@@ -4,27 +4,26 @@
     </div>
 </div>
 
-<div class="form">
-    <form >
-        <div class="form-content">
-            <div>
-                <div class="input-fields">
-                    <input type="text" placeholder="Your Name">
-                </div>
-    
-                <div class="input-fields">
-                    <input type="email" placeholder="Email">
-                </div>
-    
-                <div class="input-fields">
-                    <input type="text" placeholder="Contact Number">
-                </div>
-            </div>
-
-            <div>
-                <textarea name="" id="" cols="30"  placeholder="Your Message"></textarea>
-            </div>
-            
+    <div class="form-style">
+        <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        
+        <div class="input-field">
+            <input type="text" name="field1" placeholder="Your Name" formControlName="userName" required />
+            <span  *ngIf="userName?.errors?.['required'] && userName?.touched">Enter a valid Name</span>
         </div>
-    </form>
-</div>
+       
+        <div class="input-field">
+            <input type="email" name="field2" placeholder="Email Address" formControlName="email" required />
+            <span *ngIf="email?.errors?.['required'] && email?.touched">Enter a valid Email</span>
+        </div>
+
+        <div class="input-field">
+            <textarea name="field3" placeholder="Type your Message" formControlName="text" required></textarea>
+            <span *ngIf="text?.errors?.['required'] && text?.touched">Enter message</span>
+        </div>
+       
+        <input type="submit"/>
+        </form>
+    </div>
+   
+      
